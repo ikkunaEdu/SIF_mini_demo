@@ -10,6 +10,7 @@ def get_weighted_average(We, x, w):
     :param w: w[i, :] are the weights for the words in sentence i
     :return: emb[i, :] are the weighted average vector for sentence i
     """
+    # print "print for w", w[0,:]
     n_samples = x.shape[0]
     emb = np.zeros((n_samples, We.shape[1]))
     for i in xrange(n_samples):

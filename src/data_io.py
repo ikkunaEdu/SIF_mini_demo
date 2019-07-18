@@ -34,7 +34,8 @@ def prepare_data(list_of_seqs):
     return x, x_mask
 
 def lookupIDX(words,w):
-    w = w.lower()
+    # w = w.lower()
+    w = w.upper()
     if len(w) > 1 and w[0] == '#':
         w = w.replace("#","")
     if w in words:

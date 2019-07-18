@@ -8,13 +8,23 @@ The code is written in python and requires numpy, scipy, pickle, and sklearn.
 To install all dependencies `virtualenv` is suggested:
 
 ```
-$ virtualenv .env
-$ . .env/bin/activate
-$ pip install -r requirements.txt 
+$virtualenv .env
+$cd .env
+$source bin/activate
+$cd ..
+$pip install -r requirements.txt
 ```
-
 ## Get started
 To get started, cd into the directory examples/ and run demo.sh. It downloads the pretrained GloVe word embeddings, and then runs the script sif_embedding.py, which is an demo on how to generate sentence embedding using the SIF weighting scheme.
+Input: 
+corpus(phrases) -> corpus.txt
+vectors(GloVe) -> vectors.txt
+vocab(frequency) -> vocab.txt
+
+```
+$cd example2
+$./demo.sh > ~/DATA/NLP/ver2/SIF_embedding.txt
+```
 
 ## Source code
 The code is separated into the following parts:
